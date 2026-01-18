@@ -4,7 +4,9 @@ import numpy as np
 
 ############ First check if MPS is available! MPS is like CUDA but for Macbooks with M1 or M2 chips ############
 import torch
-# print(torch.backends.mps.is_available())
+print(torch.backends.mps.is_available())
+
+############ next bit is actual object detection portion
 
 cap = cv2.VideoCapture("trial.mp4")
 
