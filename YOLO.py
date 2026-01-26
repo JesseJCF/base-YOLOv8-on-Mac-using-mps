@@ -6,9 +6,8 @@ import numpy as np
 import torch
 print(torch.backends.mps.is_available())
 
-############ next bit is actual object detection portion
-
-cap = cv2.VideoCapture("trial.mp4")
+############ next part is the actual code for object detection ############
+cap = cv2.VideoCapture("manwalking.mp4")
 
 model = YOLO("yolov8n.pt")
 
